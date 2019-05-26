@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+<<<<<<< HEAD
     <title>La página de Roci</title>
     <link>/</link>
     <description>Recent content on La página de Roci</description>
+=======
+    <title>Airspace for Hugo</title>
+    <link>/</link>
+    <description>Recent content on Airspace for Hugo</description>
+>>>>>>> 5ca7cc3cc7c3747ca5e9e24b2e01118d925ff4b1
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
