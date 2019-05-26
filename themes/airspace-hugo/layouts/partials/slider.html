@@ -1,0 +1,40 @@
+{{ if .Site.Params.slider.enable }}
+{{ "<!-- Slider Start -->" | safeHTML}}
+<section id="slider" style="background-image: url('{{.Site.Params.slider.bgImage | absURL }}');padding-top: 15px;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12" id="clases">
+        <!-- header Nav Start -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            
+            
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav" id="navegacion">
+                <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a></li>
+                {{ range .Site.Menus.header }}
+                <li><a href="{{ .URL }}/">{{ .Name }}</a></li>
+                {{ end }}
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="block text-center">
+                    <h1 class="animated fadeInUp text-uppercase">{{ .Site.Params.slider.title | safeHTML }}</h1>
+                    <p class="animated fadeInUp">{{ .Site.Params.slider.subtitle | safeHTML }}</p>
+                    <a class="btn btn-main btn-solid-border" href="{{ .Site.Params.slider.url | absURL }}" >{{ .Site.Params.slider.btnText }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
